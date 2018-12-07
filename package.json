@@ -4,7 +4,7 @@
   "description": "Data Structures and associated Functions",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/ -d lib/",
+    "build": "jest|babel src/ -d lib/",
     "prepublish": "yarn run build",
     "start": "nodemon --exec babel-node  src/test/fibonacci.test.js"
   },

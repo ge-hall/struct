@@ -1,32 +1,31 @@
 'use strict';
-
+// @flow
 
 class Node {
-  constructor(_value) {
+  value:number
+  next:Node
+  constructor(_value:number) {
     this.value = _value;
-    this.next = null;
-    this.parent = null;
-    this.sibling = null;
+    
   }
 
 }
 
 export default class LinkedList {
 
+  head:Node
   constructor() {
-    this.head = null;
-    //this.current = null;
-    this.tail = null;
+    
   }
 
-  insert(_value) {
+  insert(_value:number) {
     const newNode = new Node(_value);
-    if (this.head === null) {
+    if (!this.head) {
       this.head  = newNode;
     }
     else{
-      let cur = head;
-      while(cur.next != null)
+      let cur:Node= this.head;
+      while(cur.next)
         cur = cur.next;
       cur.next = newNode;
     }
@@ -34,12 +33,12 @@ export default class LinkedList {
 
   }
 
-  get(index){
+  get(index:number){
     if(index >= this.length())
     throw Error('index beyond end of list');
     if(index < 0)
     throw Error('index must be zero or positive');
-    let counter = 0, cur = this.head;
+    let counter = 0, cur:Node = this.head;
     while( counter < index){
       cur = cur.next;
       counter++;
@@ -48,8 +47,7 @@ export default class LinkedList {
   }
   length() {
     let counter = 0, cur = this.head;
-    while(cur !== null&& counter < 10){
-      console.log(cur);
+    while(cur && counter < 10){
       cur = cur.next;
       counter++;
     }
@@ -60,7 +58,7 @@ export default class LinkedList {
     let str = '';
     let cur = this.head;
 
-    while (cur != null) {
+    while (cur) {
       //str = str.concat( `${cur.value}\n`);
       str += `${cur.value}\n`;
       cur = cur.next;

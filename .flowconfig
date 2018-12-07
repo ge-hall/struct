@@ -1,0 +1,15 @@
+[ignore]
+.*/test/.*
+.*/lib/.*
+
+[include]
+./src
+
+[libs]
+
+
+[lints]
+
+[options]
+
+[strict]

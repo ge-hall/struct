@@ -1,0 +1,23 @@
+{
+  "name": "struct",
+  "version": "1.0.0",
+  "description": "Data Structures and associated Functions",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node  src/test/fibonacci.test.js"
+  },
+  "repository": "https://github.com/ge-hall/struct.git",
+  "author": "Andrew Ge-Hall",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "babel": "^6.23.0"
+  },
+  "devDependencies": {
+    "@babel/preset-flow": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}

@@ -1,6 +1,9 @@
 'use strict';
 // @flow
 
+/**
+ * A Node element for LinkedList
+ */
 class Node {
   value:number
   next:Node
@@ -11,13 +14,22 @@ class Node {
 
 }
 
+/**
+ * @class LinkedList
+ * is a singly linked list
+ */
 export default class LinkedList {
 
   head:Node
-  constructor() {
-    
-  }
+  /**
+   * constructor to create a new LinkedList
+   */
+  constructor() {}
 
+  /**
+   * Inset new number into LinkedList
+   * @param {*} _value 
+   */
   insert(_value:number) {
     const newNode = new Node(_value);
     if (!this.head) {

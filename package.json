@@ -1,17 +1,20 @@
 {
-  "name": "struct",
+  "name": "@ge-hall/struct",
   "version": "1.0.0",
   "description": "Data Structures and associated Functions",
   "main": "index.js",
   "scripts": {
     "build": "jest|babel src/ -d lib/",
     "prepublish": "yarn run build",
-    "start": "nodemon --exec babel-node  src/test/fibonacci.test.js"
+    "start": "nodemon --exec babel-node  src/index.js"
   },
-  "repository": "https://github.com/ge-hall/struct.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ge-hall/struct.git"
+  },
   "author": "Andrew Ge-Hall",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "babel": "^6.23.0"
@@ -23,5 +26,18 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
     "flow-bin": "^0.87.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ge-hall/struct/issues"
+  },
+  "homepage": "https://github.com/ge-hall/struct#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "'data",
+    "structure'",
+    "'utility",
+    "functions'"
+  ]
 }

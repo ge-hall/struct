@@ -1,4 +1,5 @@
 .babelrc
 .flowconfig
 yarn.lock
-lib/
+src/
+test/

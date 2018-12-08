@@ -1,5 +1,5 @@
-const { fibonacci } = require('./src/functions/fibonacci');
-const { LinkedList } = require('./src/Lists/LinkedList');
+const { fibonacci } = require('./lib/functions/fibonacci');
+const { LinkedList } = require('./lib/Lists/LinkedList');
 
 exports.printMsg = function() {
   console.log("This is a message from the demo package");

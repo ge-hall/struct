@@ -1,4 +1,4 @@
-import LinkedList from '../Lists/LinkedList';
+import LinkedList from '../src/Lists/LinkedList';
 import { isIterable } from 'core-js';
 
 describe('Linked List properties', () => {

@@ -1,5 +1,5 @@
 {
-  "name": "@ge-hall/struct",
+  "name": "ge-hall-struct",
   "version": "1.0.0",
   "description": "Data Structures and associated Functions",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "author": "Andrew Ge-Hall",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "babel": "^6.23.0"

@@ -3,7 +3,7 @@
  * Funcion to return fibonnacci for given number
  * @param {*} n the input to fibonacci 
  */
-export default function fibonacci(n:number) {
+export function fibonacci(n:number) {
   //console.log(`n = ${n}`);
   if (n ===0)
     return 0;

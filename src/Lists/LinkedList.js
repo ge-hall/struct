@@ -18,7 +18,7 @@ class Node {
  * @class LinkedList
  * is a singly linked list
  */
-export default class LinkedList {
+export class LinkedList {
 
   head:Node
   /**

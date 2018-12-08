@@ -1,14 +1,14 @@
 // @flow
-import fib from './src/functions/fibonacci';
-import ll from './src/Lists/LinkedList';
+const {fibonacci, LinkedList, printMsg } = require('./index');
 
-console.log(fib(5));
-console.log(fib(15));
+//import ll from './src/Lists/LinkedList';
 
-const list = new ll();
+console.log(fibonacci(5));
+console.log(fibonacci(15));
+
+const list = new LinkedList();
 
 for( let i = 0; i<10000; i++)
 list.insert(i);
 
-console.log(list.toString());
-
+//console.log(list.toString());
